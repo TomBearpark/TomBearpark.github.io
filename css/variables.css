@@ -1,0 +1,158 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ===== CSS CUSTOM PROPERTIES ===== */
+:root {
+  /* Colors - Sunbear palette */
+  --color-bg-dark: #000000;
+  --color-bg-dark-end: #1a1a1a;
+  --color-bg-section: #FFFFFF;
+  --color-bg-section-alt: #f7f7f7;
+  --color-bg-card: #FFFFFF;
+  --color-card-border: #E6E6E6;
+
+  /* Accent colors - Sunbear brand */
+  --color-accent-1: #00AAE6;      /* blue - primary links & publications */
+  --color-accent-1-light: rgba(0, 170, 230, 0.08);
+  --color-accent-2: #FFAA00;      /* amber - working papers & buttons */
+  --color-accent-2-light: rgba(255, 170, 0, 0.08);
+  --color-accent-3: #FF0007;      /* red - work in progress accent */
+  --color-accent-3-light: rgba(255, 0, 7, 0.08);
+
+  /* Text */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-light: #E6E6E6;
+  --color-text-on-dark: #FFFFFF;
+
+  /* Nav */
+  --color-nav-bg: rgba(255, 255, 255, 0.92);
+  --color-nav-border: #E6E6E6;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-hero: 4.5rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-section: 5rem;
+
+  /* Layout */
+  --max-width: 1000px;
+  --border-radius: 8px;
+  --border-radius-sm: 6px;
+  --border-radius-pill: 50px;
+
+  /* Shadows - subtle */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+  --color-bg-section: #111111;
+  --color-bg-section-alt: #1a1a1a;
+  --color-bg-card: #1e1e1e;
+  --color-card-border: rgba(255, 255, 255, 0.1);
+  --color-text-primary: #E6E6E6;
+  --color-text-secondary: #999999;
+  --color-nav-bg: rgba(17, 17, 17, 0.95);
+  --color-nav-border: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-section);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-accent-1);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #0088bb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
