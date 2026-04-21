@@ -413,6 +413,7 @@
   margin-right: calc(-1 * var(--space-md));
   border-radius: var(--border-radius-sm);
   transition: background var(--transition-fast);
+  max-width: 750px;
 }
 
 .pub-item:hover {
