@@ -122,6 +122,65 @@ body {
   font-style: italic;
 }
 
+/* References / shoulders of giants */
+
+.essay-references {
+  margin-top: 4rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid var(--color-card-border);
+  border-radius: 4px;
+}
+
+.essay-references-title {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.25rem;
+  color: var(--color-text);
+}
+
+.essay-references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.essay-references-list li {
+  font-size: 0.975rem;
+  line-height: 1.6;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.essay-references-list li:last-child {
+  border-bottom: none;
+}
+
+.essay-references-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.essay-references-list a:hover {
+  color: var(--color-accent-1);
+  border-bottom-color: var(--color-accent-1);
+}
+
+.essay-references-more {
+  font-style: italic;
+  color: var(--color-text-muted);
+  padding-top: 0.75rem !important;
+}
+
+@media (max-width: 768px) {
+  .essay-references {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
 /* Footer */
 
 .essay-footer {
