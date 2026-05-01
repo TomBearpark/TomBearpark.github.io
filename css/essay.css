@@ -101,6 +101,98 @@ body {
   color: var(--color-text);
 }
 
+/* Lede / intro paragraphs */
+
+.essay-lede p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0 0 1.25rem;
+}
+
+.essay-lede p:first-child {
+  color: var(--color-text-muted);
+}
+
+.essay-divider {
+  border: none;
+  border-top: 1px solid var(--color-card-border);
+  width: 80px;
+  margin: 3rem auto;
+}
+
+/* Footnotes */
+
+.essay-fnref {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.essay-fnref a {
+  text-decoration: none;
+  color: var(--color-accent-1);
+  border: none;
+  padding: 0 2px;
+}
+
+.essay-fnref a:hover {
+  text-decoration: underline;
+}
+
+.essay-footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-card-border);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.essay-footnotes-title {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+}
+
+.essay-footnotes ol {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.essay-footnotes li {
+  margin-bottom: 0.75rem;
+}
+
+.essay-footnotes a {
+  color: var(--color-accent-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.essay-footnotes a:hover {
+  border-bottom-color: var(--color-accent-1);
+}
+
+.essay-fn-back {
+  margin-left: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* References intro line */
+
+.essay-references-intro {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+
 /* Figures */
 
 .essay-figure {
