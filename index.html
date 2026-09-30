@@ -24,8 +24,8 @@
   <meta name="twitter:image" content="https://tombearpark.com/assets/Sunbear (Large Black).png">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 
@@ -53,7 +53,7 @@
   <section class="hero" id="hero">
     <div class="hero-content hero-content--split">
       <div class="hero-photo">
-        <img src="assets/IMG_2904.JPG" alt="Tom Bearpark" class="hero-headshot">
+        <img src="assets/headshot.jpg" alt="Tom Bearpark" class="hero-headshot">
       </div>
       <div class="hero-text">
         <h1 class="hero-name">Tom Bearpark</h1>
@@ -101,6 +101,14 @@
           I completed my PhD in Public Affairs at Princeton University in 2025, where my fields were environmental economics, climate impacts, econometrics, and quantitative methods. Prior to Princeton, I was a pre-doctoral fellow at the <a href="https://impactlab.org/" target="_blank" rel="noopener">Climate Impact Lab</a> at the University of Chicago, and before that an economist at the UK energy regulator Ofgem.
         </p>
       </div>
+      <div class="themes">
+        <span class="themes-label">Research themes</span>
+        <ul class="themes-list">
+          <li>Climate and environmental impacts</li>
+          <li>Methods and credibility</li>
+          <li>Migration, geography and risk</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -119,14 +127,16 @@
           <h3><a href="https://doi.org/10.1038/s41586-025-09730-4" target="_blank" rel="noopener">Mortality impacts of rainfall and sea-level rise in a developing megacity</a></h3>
           <p>Sea-level rise amplifies monsoon-driven mortality in Mumbai, with a 15cm rise increasing rainfall-related deaths by 21%.</p>
           <div class="highlight-press">
-            <span class="highlight-press-label">Selected Press Coverage:</span>
-            <a href="https://www.nature.com/articles/d41586-025-03453-2" target="_blank" rel="noopener">Nature News &amp; Views</a>
-            <a href="https://www.nature.com/articles/d41586-025-03669-2" target="_blank" rel="noopener">Nature News</a>
-            <a href="https://www.bloomberg.com/news/articles/2025-11-12/extreme-rains-kill-2-700-in-mumbai-every-year-and-cost-1-2-billion-study-says" target="_blank" rel="noopener">Bloomberg</a>
-            <a href="https://www.forbes.com/sites/anuradhavaranasi/2025/11/18/in-mumbai-more-than-80-of-people-who-die-due-to-extreme-rainfall-live-in-slums/" target="_blank" rel="noopener">Forbes</a>
-            <a href="https://www.thehindu.com/news/national/excess-rains-in-mumbai-linked-to-8-deaths-in-monsoon-months/article70271335.ece" target="_blank" rel="noopener">The Hindu</a>
-            <a href="https://epic.uchicago.edu/insights/rain-tide-and-lives-the-hidden-mortality-cost-of-mumbais-monsoon/" target="_blank" rel="noopener">EPIC</a>
-            <a href="https://gradschool.princeton.edu/news/2025/climate-change-rising-sea-levels-worsen-urban-health-risks-mumbai-study-co-authored" target="_blank" rel="noopener">Princeton</a>
+            <span class="highlight-press-label">Selected press coverage</span>
+            <div class="press-outlets">
+              <a href="https://www.nature.com/articles/d41586-025-03453-2" target="_blank" rel="noopener">Nature News &amp; Views</a>
+              <a href="https://www.nature.com/articles/d41586-025-03669-2" target="_blank" rel="noopener">Nature News</a>
+              <a href="https://www.bloomberg.com/news/articles/2025-11-12/extreme-rains-kill-2-700-in-mumbai-every-year-and-cost-1-2-billion-study-says" target="_blank" rel="noopener">Bloomberg</a>
+              <a href="https://www.forbes.com/sites/anuradhavaranasi/2025/11/18/in-mumbai-more-than-80-of-people-who-die-due-to-extreme-rainfall-live-in-slums/" target="_blank" rel="noopener">Forbes</a>
+              <a href="https://www.thehindu.com/news/national/excess-rains-in-mumbai-linked-to-8-deaths-in-monsoon-months/article70271335.ece" target="_blank" rel="noopener">The Hindu</a>
+              <a href="https://epic.uchicago.edu/insights/rain-tide-and-lives-the-hidden-mortality-cost-of-mumbais-monsoon/" target="_blank" rel="noopener">EPIC</a>
+              <a href="https://gradschool.princeton.edu/news/2025/climate-change-rising-sea-levels-worsen-urban-health-risks-mumbai-study-co-authored" target="_blank" rel="noopener">Princeton</a>
+            </div>
           </div>
         </div>
       </div>
@@ -138,19 +148,19 @@
     <div class="container">
       <h2 class="section-title">Publications</h2>
       <div class="pub-list">
-        <article class="pub-item">
+        <article class="pub-item" id="paper-coral-reefs">
           <span class="pub-badge">Conservation Letters 2026</span>
           <h3 class="pub-title">Causes and correlates of unsustainable scuba diving tourism on coral reefs</h3>
           <p class="pub-authors">(with <a href="https://eeb.princeton.edu/people/bing-lin" target="_blank" rel="noopener">Bing Lin</a>, <a href="https://www.bangor.ac.uk/oceansciences/staff/ronan-roche" target="_blank" rel="noopener">Ronan C. Roche</a>, Jacobo McGuire, Raymond Jakub, Derta Prabuning, <a href="https://elke-u-weber.com/" target="_blank" rel="noopener">Elke U. Weber</a>, and <a href="https://eeb.princeton.edu/people/david-wilcove" target="_blank" rel="noopener">David S. Wilcove</a>)</p>
           <a href="https://doi.org/10.1111/con4.70055" target="_blank" rel="noopener" class="pub-link">doi.org/10.1111/con4.70055</a>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-mumbai-mortality">
           <span class="pub-badge">Nature 2025</span>
           <h3 class="pub-title">Mortality impacts of rainfall and sea-level rise in a developing megacity</h3>
           <p class="pub-authors">(with <a href="https://sites.google.com/site/ashwinrode/home" target="_blank" rel="noopener">Ashwin Rode</a> and Archana Patankar)</p>
           <a href="https://doi.org/10.1038/s41586-025-09730-4" target="_blank" rel="noopener" class="pub-link">doi.org/10.1038/s41586-025-09730-4</a>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-data-anomalies">
           <span class="pub-badge">Nature 2025</span>
           <h3 class="pub-title">Data anomalies and the economic commitment of climate change</h3>
           <p class="pub-authors">(with <a href="http://dylanhogan.com/" target="_blank" rel="noopener">Dylan Hogan</a> and <a href="https://www.solomonhsiang.com/" target="_blank" rel="noopener">Solomon Hsiang</a>)</p>
@@ -165,25 +175,41 @@
     <div class="container">
       <h2 class="section-title">Working Papers</h2>
       <div class="pub-list">
-        <article class="pub-item">
+        <article class="pub-item" id="paper-migration">
           <h3 class="pub-title">Climate migration projections across disciplines: a model inter-comparison for the US</h3>
           <p class="pub-authors">(with <a href="https://nchoquettelevy.github.io/" target="_blank" rel="noopener">Nic Choquette-Levy</a>, <a href="https://oppenheimer.scholar.princeton.edu/" target="_blank" rel="noopener">Michael Oppenheimer</a>, <a href="https://jrosenthalkay.github.io/" target="_blank" rel="noopener">Jordan Rosenthal-Kay</a>, and <a href="https://txiao.scholar.princeton.edu/" target="_blank" rel="noopener">Tingyin Xiao</a>)</p>
-          <a href="assets/2026_MIGICP.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+          <div class="pub-actions">
+            <a href="assets/2026_MIGICP.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+            <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abs-migration">Abstract</button>
+          </div>
+          <p class="pub-abstract" id="abs-migration" hidden>How will climate change reshape migration patterns? Different disciplines approach this question with models that vary in their assumptions and find divergent results. Here, we present the first systematic intercomparison of four approaches to modelling the climate migration relationship: causal inference, agent-based, gravity, and general equilibrium. We introduce a unified conceptual framework designed to compare their outputs at a common scale, and illustrate the framework by projecting temperature-driven internal migration across U.S. states, estimating over one hundred models per approach. Despite their structural differences, the approaches agree on the pattern and magnitude of warming-driven redistribution. Climate change causes cold regions to gain population and hot regions to lose it by under one percent of the population over a 25-year future horizon (representing less than three percent of the overall projected migration during that period). The disagreement that remains is dominated by researchers’ implementation choices. These contribute as much to variance in results as the choice of approach itself and roughly twice as much as statistical uncertainty, the only source of uncertainty studies conventionally report. More broadly, our framework offers a transparent, reproducible way to identify the characteristics of climate migration that are robust across modelling traditions. Like the intercomparison efforts that transformed climate and crop science, it can be extended to other regions, to hazards beyond heat, and to new modelling frameworks.</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-turning-points">
           <h3 class="pub-title">Estimating turning points and testing for climate adaptation</h3>
           <p class="pub-authors">(with <a href="https://jrosenthalkay.github.io/" target="_blank" rel="noopener">Jordan Rosenthal-Kay</a>)</p>
-          <a href="assets/2026_turning_points.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+          <div class="pub-actions">
+            <a href="assets/2026_turning_points.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+            <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abs-turning-points">Abstract</button>
+          </div>
+          <p class="pub-abstract" id="abs-turning-points" hidden>Estimating the turning points of nonlinear response functions is central to empirical economics and beyond. We show that the standard turning point estimator suffers from the same pathologies as weak-instrument IV: it is a ratio estimator with a fat-tailed sampling distribution and severe median bias. Standard inference can be misleading, and point estimates are drawn toward the regressor mean. We develop robust sign-restricted confidence sets and shrinkage estimators that pool information across units to stabilise inference. In temperature-GDP and temperature-mortality applications, standard confidence intervals understate uncertainty, and patterns interpreted as climate adaptation are spurious and reflect a statistical artifact.</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-geography">
           <h3 class="pub-title">The economic geography of climate risk</h3>
           <p class="pub-authors">(with <a href="https://www.aditya-bhandari.com" target="_blank" rel="noopener">Aditya Bhandari</a> and <a href="https://jrosenthalkay.github.io/" target="_blank" rel="noopener">Jordan Rosenthal-Kay</a>)</p>
-          <a href="https://www.dropbox.com/scl/fi/tkq8wntapi4m3h527znep/EGCR.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+          <div class="pub-actions">
+            <a href="assets/2025_geography_risk.pdf" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+            <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abs-geography">Abstract</button>
+          </div>
+          <p class="pub-abstract" id="abs-geography" hidden>Projected temperature changes are variable in both their magnitude and geography. This paper studies how nonlinear damages and general equilibrium forces filter this climate risk across time and space. To do so, we build a tractable dynamic spatial model linking countries through trade and migration, and derive analytical first- and second-order welfare approximations that decompose the mean and variance of welfare changes into damage function, trade, and migration components. Using an ensemble of temperature projections from CMIP-6 and an empirically estimated damage function, we show that climate change-induced welfare risk is large. The standard deviation of country-level projected welfare loss across temperature projections is on average over 8% – compared to an average welfare loss of 13% – and is spatially unequal. Climate risk inequality is half as large as global income inequality. We show that spatial linkages reshape not only the level of climate damages, but also the spatial distribution of climate risk: accounting for trade and migration can reduce the standard deviation of welfare changes by up to 40% in low-income, internationally integrated nations that can diversify their exposure to local shocks.</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-carbon-at-risk">
           <h3 class="pub-title">The Carbon at Risk measure to manage carbon removal risk and guide effective portfolio construction</h3>
           <p class="pub-authors">(with <a href="https://www.carbonatrisk.org/bali-lee-1" target="_blank" rel="noopener">Bali Lee</a>, Nick Gogerty, Oleksandr Kit, Delia Meth-Cohn, Frederic Olbert, <a href="https://www.lse.ac.uk/granthaminstitute/profile/frank-venmans/" target="_blank" rel="noopener">Frank Venmans</a>, Gabrielle Walker, Paul Young, and <a href="https://experts.exeter.ac.uk/35112-ben-groom" target="_blank" rel="noopener">Ben Groom</a>)</p>
-          <a href="https://www.researchsquare.com/article/rs-9382336/v1" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+          <div class="pub-actions">
+            <a href="https://www.researchsquare.com/article/rs-9382336/v1" target="_blank" rel="noopener" class="pub-link">Download paper</a>
+            <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abs-carbon-at-risk">Abstract</button>
+          </div>
+          <p class="pub-abstract" id="abs-carbon-at-risk" hidden>Meeting net-zero targets requires scaling carbon dioxide removal from ~2 GtCO<sub>2</sub>/yr today to 7–9 GtCO<sub>2</sub>/yr by 2050. Since different carbon removal technologies face binding upper limits on deployable scale, this will require trillions of dollars of investment to be allocated across technologies with fundamentally different risk and cost profiles. Yet carbon removal markets lack a standardised, quantitative measure of permanence risk. Inspired by Value at Risk in financial markets, we propose Carbon at Risk (CaR): a probabilistic measure of the shortfall between contracted removals and realised storage at a given confidence level and time horizon. We calibrate CaR in two proof-of-concept applications: forest carbon, where Monte Carlo simulations driven by satellite fire data yield a single-project 95% CaR of more than 70% over 200 years for California, and geological storage (DACCS), where 95% CaR ranges from 0.15% (well-regulated offshore) to 17% (poorly regulated onshore). This variation implies that current permanence mechanisms, typically flat-rate deductions applied once at credit issuance, systematically over-buffer low-risk projects while under-buffering high-risk ones, and could be structurally ill-suited to risks that compound and shift over decades. We show that combining technologies in a portfolio creates a trade-off between cost and risk, and that the minimum cost of meeting a permanence target depends on the correlation structure of key risk factors. CaR provides a basis for risk-calibrated protection mechanisms, from buffer design and insurance pricing to fund-based instruments sized to cover reversal risk, across policy-relevant time horizon. It also provides the basis for technology-agnostic project comparison, reserve construction, and for the international accounting frameworks needed to steward global carbon stocks and sinks as a common resource.</p>
         </article>
       </div>
     </div>
@@ -194,23 +220,23 @@
     <div class="container">
       <h2 class="section-title">Selected Work in Progress</h2>
       <div class="pub-list">
-        <article class="pub-item">
+        <article class="pub-item" id="paper-economic-output">
           <h3 class="pub-title">The impact of climate change on global economic output</h3>
           <p class="pub-authors">(with <a href="https://web.stanford.edu/~mburke/" target="_blank" rel="noopener">Marshall Burke</a>, <a href="http://dylanhogan.com/" target="_blank" rel="noopener">Dylan Hogan</a>, and <a href="https://www.solomonhsiang.com/" target="_blank" rel="noopener">Solomon Hsiang</a>)</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-floods-housing">
           <h3 class="pub-title">The impact of urban floods on housing markets: Evidence from Mumbai</h3>
           <p class="pub-authors">(with <a href="https://www.ouazad.com/" target="_blank" rel="noopener">Amine Ouazad</a>, <a href="https://sites.google.com/site/ashwinrode/home" target="_blank" rel="noopener">Ashwin Rode</a>, and <a href="https://sites.google.com/view/vaidehitandel/home" target="_blank" rel="noopener">Vaidehi Tandel</a>)</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-rainfall-mortality">
           <h3 class="pub-title">The global mortality consequences of rainfall</h3>
           <p class="pub-authors">(with <a href="https://sites.google.com/site/ashwinrode/home" target="_blank" rel="noopener">Ashwin Rode</a> and <a href="https://www.udel.edu/academics/colleges/ceoe/departments/smsp/faculty/james-rising/" target="_blank" rel="noopener">James Rising</a>)</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-time-controls">
           <h3 class="pub-title">Selecting time controls in climate impact studies</h3>
           <p class="pub-authors">(with <a href="https://filippopalomba.github.io/about.html" target="_blank" rel="noopener">Filippo Palomba</a>)</p>
         </article>
-        <article class="pub-item">
+        <article class="pub-item" id="paper-groundwater">
           <h3 class="pub-title">Groundwater depletion reduces farm worker employment in the High Plains</h3>
           <p class="pub-authors">(with <a href="https://cpree.princeton.edu/people/lucas-frye" target="_blank" rel="noopener">Lucas Frye</a> and <a href="https://oppenheimer.scholar.princeton.edu/" target="_blank" rel="noopener">Michael Oppenheimer</a>)</p>
         </article>
@@ -262,11 +288,11 @@
         <a href="https://github.com/TomBearpark" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/tom-bearpark-542903b9/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <p class="footer-copy">&copy; 2025 Tom Bearpark</p>
+      <p class="footer-copy">&copy; 2026 Tom Bearpark</p>
     </div>
   </footer>
 
   <!-- ===== SCRIPTS ===== -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>

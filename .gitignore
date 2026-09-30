@@ -1,2 +1,5 @@
 .DS_Store
 assets/cv/jobs.zip
+assets/cv/*.aux
+assets/cv/*.log
+assets/cv/*.out

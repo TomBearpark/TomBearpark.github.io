@@ -41,14 +41,13 @@ window.addEventListener('scroll', handleScroll, { passive: true });
 handleScroll();
 
 /* ============================================================
-   Smooth scroll for nav links
+   Abstract toggles
    ============================================================ */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+document.querySelectorAll('.abstract-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const abstract = document.getElementById(btn.getAttribute('aria-controls'));
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    abstract.hidden = open;
   });
 });
